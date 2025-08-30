@@ -13,7 +13,7 @@ body {
 }
 
 .title {
-  font-size: 2.5 rem;
+  font-size: 3.5 rem;
   margin-bottom: 30px;
 }
 
@@ -80,7 +80,7 @@ body {
 /* Mobile optimization */
 @media (max-width: 600px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .move-icon {
     width: 110px;
