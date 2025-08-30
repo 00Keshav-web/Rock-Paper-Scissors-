@@ -13,8 +13,15 @@ body {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.2 rem;
   margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* spacing between buttons */
+  flex-wrap: wrap; /* if too small, wrap */
 }
 
 /* Buttons */
@@ -33,8 +40,8 @@ body {
 }
 
 .move-icon {
-  width: 70px;   /* bigger for mobile */
-  height: 70px;
+  width: 90px;   /* bigger for mobile */
+  height: 90px;
 }
 
 /* Results and score */
@@ -50,18 +57,18 @@ body {
 }
 
 .score {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 10px 0;
 }
 
 .reset-score-button {
   margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 1rem;
+  padding: 14px 24px;
+  font-size: 1.2rem;
   background: white;
   color: black;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -76,17 +83,17 @@ body {
     font-size: 2.5rem;
   }
   .move-icon {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
   }
   .move-button {
     padding: 25px;
     margin: 15px;
   }
   .result {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .score {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
