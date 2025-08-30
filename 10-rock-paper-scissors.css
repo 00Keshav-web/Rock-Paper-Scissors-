@@ -1,36 +1,92 @@
-body{
-  background-color: rgb(25, 25, 25);
+/* General styles */
+body {
+  background: #111; /* dark background */
   color: white;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* full screen */
+  margin: 0;
+  text-align: center;
 }
-.title{
-  font-size: 30px;
-  font-weight: bold;
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
-.move-icon{
-  height: 50px;
-}
-.move-button{
-  background-color: transparent;
+
+/* Buttons */
+.move-button {
+  background: transparent;
   border: 3px solid white;
-  border-radius: 60px;
-  width: 120px;
-  height: 120px;
-  margin-right: 10px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 10px;
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
-.result{
-  font-size: 25px;
+
+.move-button:hover {
+  transform: scale(1.1);
+}
+
+.move-icon {
+  width: 70px;   /* bigger for mobile */
+  height: 70px;
+}
+
+/* Results and score */
+.result {
+  font-size: 1.8rem;
+  margin-top: 20px;
   font-weight: bold;
-  margin-top: 15px;
 }
-.score{
-  margin-top: 60px;
+
+.js-moves {
+  font-size: 1.4rem;
+  margin: 10px 0;
 }
-.reset-score-button{
-  background-color: white;
+
+.score {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.reset-score-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: white;
+  color: black;
   border: none;
-  font-size: 15px;
-  padding: 8px 15px;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+.reset-score-button:hover {
+  background: #f77f00;
+  color: white;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .move-icon {
+    width: 90px;
+    height: 90px;
+  }
+  .move-button {
+    padding: 25px;
+    margin: 15px;
+  }
+  .result {
+    font-size: 2rem;
+  }
+  .score {
+    font-size: 1.4rem;
+  }
 }
