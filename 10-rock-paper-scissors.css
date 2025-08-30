@@ -13,58 +13,60 @@ body {
 }
 
 .title {
-  font-size: 3.5 rem;
+  font-size: 3 rem;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 25px; /* spacing between buttons */
+  gap: 30px; /* spacing between buttons */
   flex-wrap: wrap; /* if too small, wrap */
 }
 
 /* Buttons */
 .move-button {
   background: transparent;
-  border: 3px solid white;
+  border: 4px solid white;
   border-radius: 50%;
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .move-button:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .move-icon {
-  width: 90px;   /* bigger for mobile */
-  height: 90px;
+  width: 100px;   /* bigger for mobile */
+  height: 100px;
 }
 
 /* Results and score */
 .result {
-  font-size: 1.8rem;
-  margin-top: 20px;
+  font-size: 2rem;
+  margin-top: 25px;
   font-weight: bold;
 }
 
 .js-moves {
-  font-size: 1.4rem;
-  margin: 10px 0;
+  font-size: 1.6rem;
+  margin: 12px 0;
 }
 
 .score {
-  font-size: 1.4rem;
-  margin: 10px 0;
+  font-size: 1.5rem;
+  margin: 12px 0;
 }
 
 .reset-score-button {
-  margin-top: 20px;
-  padding: 14px 24px;
-  font-size: 1.2rem;
+  margin-top: 25px;
+  padding: 14px 28px;
+  font-size: 1.3rem;
   background: white;
   color: black;
   border: none;
@@ -83,17 +85,17 @@ body {
     font-size: 3.5rem;
   }
   .move-icon {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
   }
   .move-button {
-    padding: 25px;
-    margin: 15px;
+    padding: 35px;
+    margin: 18px;
   }
   .result {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
   .score {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
