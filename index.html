@@ -5,41 +5,61 @@
     <link rel="stylesheet" href="10-rock-paper-scissors.css">
   </head>
   <body>
-    <h1 class="title"> Rock Paper Scissors</h1>
-    <div class="button-container">
-      <button onclick="
-       playGame('rock');
-      " class="move-button"><img src="rock-emoji.png" class="move-icon">
-      </button>
-  
-  
-      <button onclick="
-       playGame('paper');
-      " class="move-button"><img src="paper-emoji.png" class="move-icon">
-      </button>
-  
-  
-      <button onclick="
-       playGame('scissors');
-      " class="move-button"><img src="scissors-emoji.png" class="move-icon">
-      </button>
+    <main>
+    <h1 class="title">Rock Paper Scissors</h1>
+
+    <!-- Rules Modal -->
+    <div id="rulesModal" class="modal">
+      <div class="modal-content">
+        <h2>How to Play 🎮</h2>
+        <p>Rock beats Scissors ✂️<br>
+           Scissors beats Paper 📄<br>
+           Paper beats Rock 🪨</p>
+        <p>Click your move and see who wins!</p>
+        <button id="closeRules">Got it!</button>
+      </div>
     </div>
 
-    <p class="js-result result"></p>
+    <!-- Mode Selection -->
+    <div id="modeSelection" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Select Game Mode</h2>
+        <button onclick="startGame('computer')">Play vs Computer 🤖</button>
+        <button onclick="startGame('twoPlayer')">Two Player 👥</button>
+      </div>
+    </div>
 
-    <p class="js-moves"></p>
+    <!-- Game Section -->
+    <div id="gameSection" style="display:none;">
+      <div class="button-container">
+        <button onclick="playGame('rock');" class="move-button">
+          <img src="rock-emoji.png" class="move-icon">
+        </button>
+        <button onclick="playGame('paper');" class="move-button">
+          <img src="paper-emoji.png" class="move-icon">
+        </button>
+        <button onclick="playGame('scissors');" class="move-button">
+          <img src="scissors-emoji.png" class="move-icon">
+        </button>
+      </div>
 
-    <p class="js-score score"></p>
+      <p class="js-result result"></p>
+      <p class="js-moves"></p>
+      <p class="js-score score"></p>
 
-    <button onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score');
-      updateScoreElement();
-    " class="reset-score-button">Reset Score</button>
+      <button onclick="resetScore()" class="reset-score-button">Reset Score</button>
+    </div>
+  </main>
+    <!-- Footer -->
+    <footer>
+      <p>
+        <a href="about.html">About</a> |
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </p>
+      <p>&copy; <span id="year"></span> Rock Paper Scissors Game. All rights reserved.</p>
+    </footer>
 
     <script src="10-rock-paper-scissors.js"></script>
   </body>
 </html>
-
