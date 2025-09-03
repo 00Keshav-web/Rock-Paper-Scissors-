@@ -1,7 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <meta name="description" content="Play Rock Paper Scissors online for free! Challenge the computer or play two-player mode. Simple, fun, and mobile-friendly game.">
+    <meta name="keywords" content="rock paper scissors, play online, free game, hand game, multiplayer, fun games, two player game">
+
+    <!-- Open Graph (for social media sharing) -->
+    <meta property="og:title" content="Rock Paper Scissors Online Game" />
+    <meta property="og:description" content="Challenge your friends or play vs computer. Free, fun, and mobile-friendly Rock Paper Scissors game!" />
+    <meta property="og:image" content="preview.png" />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rock Paper Scissors Online" />
+    <meta name="twitter:description" content="Play Rock Paper Scissors online for free. Mobile-friendly and fun!" />
+    <meta name="twitter:image" content="preview.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourwebsite.com/">
     <link rel="stylesheet" href="10-rock-paper-scissors.css">
   </head>
   <body>
@@ -33,13 +53,13 @@
     <div id="gameSection" style="display:none;">
       <div class="button-container">
         <button onclick="playGame('rock');" class="move-button">
-          <img src="rock-emoji.png" class="move-icon">
+          <img src="rock-emoji.png" alt="ROCK" class="move-icon">
         </button>
         <button onclick="playGame('paper');" class="move-button">
-          <img src="paper-emoji.png" class="move-icon">
+          <img src="paper-emoji.png" alt="PAPER" class="move-icon">
         </button>
         <button onclick="playGame('scissors');" class="move-button">
-          <img src="scissors-emoji.png" class="move-icon">
+          <img src="scissors-emoji.png" alt="SCISSORS" class="move-icon">
         </button>
       </div>
 
