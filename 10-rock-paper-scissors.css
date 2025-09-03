@@ -16,13 +16,13 @@ body {
 .title {
   font-size: 3 rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 30px; /* spacing between buttons */
+  gap: 20px; /* spacing between buttons */
   flex-wrap: wrap; /* if too small, wrap */
 }
 
@@ -31,7 +31,7 @@ body {
   background: transparent;
   border: 4px solid white;
   border-radius: 50%;
-  padding: 30px;
+  padding: 20px;
   margin: 10px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -43,31 +43,31 @@ body {
 }
 
 .move-icon {
-  width: 100px;   /* bigger for mobile */
-  height: 100px;
+  width: 80px;   /* bigger for mobile */
+  height: 80px;
 }
 
 /* Results and score */
 .result {
-  font-size: 2rem;
-  margin-top: 25px;
+  font-size: 1.8rem;
+  margin-top: 20px;
   font-weight: bold;
 }
 
 .js-moves {
-  font-size: 1.6rem;
-  margin: 12px 0;
+  font-size: 1.3rem;
+  margin: 10px 0;
 }
 
 .score {
-  font-size: 1.5rem;
-  margin: 12px 0;
+  font-size: 1.3rem;
+  margin: 10px 0;
 }
 
 .reset-score-button {
-  margin-top: 25px;
-  padding: 14px 28px;
-  font-size: 1.3rem;
+  margin-top: 20px;
+  padding: 12px 22px;
+  font-size: 1.1rem;
   background: white;
   color: black;
   border: none;
@@ -83,21 +83,21 @@ body {
 /* Mobile optimization */
 @media (max-width: 600px) {
   .title {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
   }
   .move-icon {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
   .move-button {
-    padding: 35px;
-    margin: 18px;
+    padding: 25px;
+    margin: 12px;
   }
   .result {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .score {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 /* Modal styling */
@@ -115,19 +115,20 @@ body {
 .modal-content {
   background: white;
   color: black;
-  padding: 30px;
+  padding: 20px;
   border-radius: 12px;
   text-align: center;
   max-width: 400px;
+  width: 90%;
 }
 
 .modal-content h2 {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .modal-content button {
-  margin-top: 20px;
-  padding: 12px 24px;
+  margin-top: 15px;
+  padding: 10px 20px;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
@@ -155,7 +156,7 @@ body {
   color: #333;
 }
 .footer a {
-  margin: 0 10px;
+  margin: 0 8px;
   text-decoration: none;
   color: #333;
 }
